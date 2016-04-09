@@ -1,0 +1,15 @@
+PRIME is required at runtime, not build time.
+--- scim-prime-1.0.1/configure.ac.orig	2008-01-29 03:46:11.000000000 +0100
++++ scim-prime-1.0.1/configure.ac	2016-04-09 09:16:14.045891119 +0200
+@@ -118,11 +118,6 @@
+ # Checks for PRIME
+ PRIME_VERSION=1.0.0
+ 
+-PKG_CHECK_MODULES(PRIME,
+-	[prime >= $PRIME_VERSION],
+-	[],
+-	[AC_MSG_ERROR(Please install PRIME-1.0.0 or later.)])
+-
+ 
+ AC_CONFIG_FILES([
+ Makefile

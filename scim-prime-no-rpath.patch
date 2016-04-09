@@ -1,0 +1,18 @@
+--- scim-prime-1.0.1/src/Makefile.am.orig	2005-10-13 13:41:14.000000000 +0200
++++ scim-prime-1.0.1/src/Makefile.am	2016-04-09 20:38:55.240838807 +0200
+@@ -31,7 +31,6 @@
+ 
+ prime_la_LDFLAGS = \
+ 	-avoid-version \
+-	-rpath $(moduledir) \
+ 	-module \
+ 	@LIBTOOL_EXPORT_OPTIONS@ \
+ 	@SCIM_LIBS@
+@@ -52,7 +51,6 @@
+ prime_imengine_setup_la_CXXFLAGS= @SCIM_GTKUTILS_CFLAGS@ @SCIM_CFLAGS@ @SCIM_DEBUG_FLAGS@
+ 
+ prime_imengine_setup_la_LDFLAGS = -avoid-version \
+-                                   -rpath $(setupmoduledir) \
+                                    -module \
+                                    @LIBTOOL_EXPORT_OPTIONS@ \
+                                    @SCIM_GTKUTILS_LIBS@ \
